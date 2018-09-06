@@ -1,0 +1,19 @@
+<div>
+    <!-- <addNote (Add)="AddNote($event)"></addNote> -->
+
+    <ul>
+      <li>
+        <a routerLink="/add">Add Note</a>
+      </li>
+      <li>
+        <a routerLink="/notes/office">Work</a>      </li>
+      <li>
+        <a routerLink="/notes/home">Home</a>
+      </li>
+    </ul>
+   
+   
+   
+  </div>
+<notes *ngFor="let note of noteLists" [mediaItem]="note"
+(delete)="onDelete($event)" style="padding: 5px"></notes>

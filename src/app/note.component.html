@@ -1,0 +1,6 @@
+<div style="width: 200px;border: 1px solid blue;padding: 5px;"
+[ngClass]="{'green':mediaItem.type==='office','yellow':mediaItem.type==='home'}" >
+   <h3>{{mediaItem.title | uppercase}}</h3> 
+    <span>{{mediaItem.description}} </span>     
+    <a (click)="OnDeleteMediaItem()">Delete</a>
+</div>
